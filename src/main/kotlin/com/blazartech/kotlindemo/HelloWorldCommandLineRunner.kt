@@ -23,6 +23,9 @@ class HelloWorldCommandLineRunner : CommandLineRunner {
         args.forEach { log.info("Application args: $it") }
         log.info("Hello world!")
         log.info("message property = {}", message)
+
+        val user = UserData(name = "scott", age = 25)
+        log.info("user = {}", user)
     }
 }
 
