@@ -20,7 +20,7 @@ class ProcessingCommandLineRunner : CommandLineRunner {
 
     private val log = LoggerFactory.getLogger(ProcessingCommandLineRunner::class.java)
 
-    override fun run(vararg args: String?) {
+    override fun run(vararg args: String) {
         val value = 10
         log.info("processing value {} to get output {}", value, pab.processValue(value))
     }

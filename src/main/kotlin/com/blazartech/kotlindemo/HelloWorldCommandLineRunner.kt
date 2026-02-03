@@ -19,7 +19,7 @@ class HelloWorldCommandLineRunner : CommandLineRunner {
     @Value("\${demo.msg}") 
     private val message : String = ""
 
-    override fun run(vararg args: String?) {
+    override fun run(vararg args: String) {
         args.forEach { log.info("Application args: $it") }
         log.info("Hello world!")
         log.info("message property = {}", message)
